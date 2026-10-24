@@ -1,0 +1,69 @@
+2026-10-24 14:09:21 [INFO] Inicio de ejecución
+2026-10-24 14:09:21 [INFO] LocalReader: 3 dictámenes en /home/seba/Escritorio/LCC/Tesina/prototipo/datos/dictamenes
+2026-10-24 14:09:21 [INFO] LocalReader: leyendo dictamen_medico_calculo_incapacidad.pdf
+2026-10-24 14:09:22 [INFO] SeccionIncapacidad: total 2.0 %, 5 componentes
+2026-10-24 14:09:22 [INFO] Dictamen dictamen_medico_calculo_incapacidad.pdf: secciones ['Seccion Datos Principales', 'Seccion Fundamentos', 'Seccion Incapacidad']
+2026-10-24 14:09:22 [INFO] LocalReader: leyendo dictamen_medico_correcto.pdf
+2026-10-24 14:09:22 [INFO] SeccionIncapacidad: total 7.0 %, 6 componentes
+2026-10-24 14:09:22 [INFO] Dictamen dictamen_medico_correcto.pdf: secciones ['Seccion Datos Principales', 'Seccion Fundamentos', 'Seccion Incapacidad']
+2026-10-24 14:09:22 [INFO] LocalReader: leyendo dictamen_medico_tipo_contingencia.pdf
+2026-10-24 14:09:22 [INFO] Dictamen dictamen_medico_tipo_contingencia.pdf: secciones ['Seccion Datos Principales', 'Seccion Fundamentos']
+2026-10-24 14:09:22 [INFO] MotorSecuencial: procesando dictamen_medico_calculo_incapacidad.pdf
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: True
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ReglaErrorCalculoIncapacidad', 'ReglaErrorTipoContingencia']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ReglaErrorCalculoIncapacidad
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: True
+2026-10-24 14:09:22 [INFO] ErrorCalculoIncapacidad: informada 2.0 %, calculada 1.26 %
+2026-10-24 14:09:22 [INFO] ReglaErrorCalculoIncapacidad sobre dictamen_medico_calculo_incapacidad.pdf: detectado
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ReglaErrorTipoContingencia']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ReglaErrorTipoContingencia
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] DummyPromptTemplateService: prompt construido con la plantilla 'tipo_contingencia'
+2026-10-24 14:09:22 [INFO] DummyModelLLMService: ninguna clave encontrada, respuesta por defecto
+2026-10-24 14:09:22 [INFO] ErrorTipoContingencia: respuesta del LLM {'status': 'Ok', 'clasificacion': 'Accidente Laboral'}
+2026-10-24 14:09:22 [INFO] ReglaErrorTipoContingencia sobre dictamen_medico_calculo_incapacidad.pdf: no detectado
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ResumenAnalizador']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ResumenAnalizador
+2026-10-24 14:09:22 [INFO] ResumenAnalizador: Error de cálculo de incapacidad en dictamen_medico_calculo_incapacidad.pdf
+2026-10-24 14:09:22 [INFO] MotorSecuencial: procesando dictamen_medico_correcto.pdf
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: True
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ReglaErrorCalculoIncapacidad', 'ReglaErrorTipoContingencia']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ReglaErrorCalculoIncapacidad
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: True
+2026-10-24 14:09:22 [INFO] ErrorCalculoIncapacidad: informada 7.0 %, calculada 7.0 %
+2026-10-24 14:09:22 [INFO] ReglaErrorCalculoIncapacidad sobre dictamen_medico_correcto.pdf: no detectado
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ReglaErrorTipoContingencia']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ReglaErrorTipoContingencia
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] DummyPromptTemplateService: prompt construido con la plantilla 'tipo_contingencia'
+2026-10-24 14:09:22 [INFO] DummyModelLLMService: ninguna clave encontrada, respuesta por defecto
+2026-10-24 14:09:22 [INFO] ErrorTipoContingencia: respuesta del LLM {'status': 'Ok', 'clasificacion': 'Accidente Laboral'}
+2026-10-24 14:09:22 [INFO] ReglaErrorTipoContingencia sobre dictamen_medico_correcto.pdf: no detectado
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ResumenAnalizador']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ResumenAnalizador
+2026-10-24 14:09:22 [INFO] MotorSecuencial: procesando dictamen_medico_tipo_contingencia.pdf
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: False
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ReglaErrorTipoContingencia']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ReglaErrorTipoContingencia
+2026-10-24 14:09:22 [INFO] ContingenciaNoInItinere: True
+2026-10-24 14:09:22 [INFO] DummyPromptTemplateService: prompt construido con la plantilla 'tipo_contingencia'
+2026-10-24 14:09:22 [INFO] DummyModelLLMService: clave 'camino al trabajo' encontrada en el prompt
+2026-10-24 14:09:22 [INFO] ErrorTipoContingencia: respuesta del LLM {'status': 'Error', 'clasificacion': 'In Itinere', 'subtipo': 'De la casa al trabajo', 'contingencia': 'Accidente In Itinere', 'evidencia': 'camino al trabajo, caminando se patina y se golpea varias partes del cuerpo en la caida'}
+2026-10-24 14:09:22 [INFO] ReglaErrorTipoContingencia sobre dictamen_medico_tipo_contingencia.pdf: detectado
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: False
+2026-10-24 14:09:22 [INFO] SeccionIncapacidadCondicion: False
+2026-10-24 14:09:22 [INFO] ReglaErrorCalculoIncapacidad sobre dictamen_medico_tipo_contingencia.pdf: no evaluada
+2026-10-24 14:09:22 [INFO] EstrategiaBasicaControl: candidatas ['ResumenAnalizador']
+2026-10-24 14:09:22 [INFO] Control: ejecuta ResumenAnalizador
+2026-10-24 14:09:22 [INFO] ResumenAnalizador: Error de tipo de contingencia en dictamen_medico_tipo_contingencia.pdf
+2026-10-24 14:09:22 [INFO] ReporteGerMedPDF: página 358704/25 para dictamen_medico_calculo_incapacidad.pdf
+2026-10-24 14:09:22 [INFO] ReporteGerMedPDF: página 452817/25 para dictamen_medico_tipo_contingencia.pdf
+2026-10-24 14:09:22 [INFO] ReporteGerMedPDF: 3 dictámenes, 2 alertas
+2026-10-24 14:09:22 [INFO] LocalSender: reporte generado con ReporteGerMedPDF
+2026-10-24 14:09:22 [INFO] LocalSender: reporte guardado en /home/seba/Escritorio/LCC/Tesina/prototipo/datos/resultados/Informe_Diario_Dictamenes_03-11-2025_generado.pdf
+2026-10-24 14:09:22 [INFO] Fin de ejecución
